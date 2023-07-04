@@ -138,16 +138,46 @@ body {
   width: 100%;
 }
 
+/* --------------- */
+/* Section Three */
+/* --------------- */
+
+.section-three {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5em;
+}
+
+.section-three h1 {
+  margin-bottom: 1em;
+  font-size: 4em;
+  background: linear-gradient(
+    to right,
+    rgb(0, 99, 199),
+    rgba(19, 228, 68, 0.89)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: white;
+}
+
+.section-three .text {
+  line-height: 1.5em;
+  font-size: 3em;
+}
+
 /* ----------------- */
 /* Mobile screen sizes for 576px */
 /*--------------------*/
 
 @media screen and (max-width: 576px) {
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   .navbar {
     padding: 0 0.8em;
@@ -205,11 +235,11 @@ body {
     margin-bottom: 1em;
   }
 
-  .left-side h1{
+  .left-side h1 {
     font-size: 2.5em;
   }
 
-  .left-side h3{
+  .left-side h3 {
     font-size: 1.2em;
   }
 
@@ -242,8 +272,23 @@ body {
     width: 100%;
     max-width: 100%;
   }
-}
 
+  /* mobile responsive code for section three */
+
+  .section-three {
+    padding: 3em;
+  }
+
+  .section-three h1 {
+    font-size: 2em;
+    padding-inline: 30%;
+    text-align: center;
+  }
+
+  .section-three .text {
+    font-size: 1.4em;
+  }
+}
 
 /* tablet view screen size for 768px */
 
@@ -323,5 +368,19 @@ body {
 
   .right-side video {
     width: 100%;
+  }
+
+  /* mobile responsive code for section three */
+  .section-three {
+    padding: 3em;
+  }
+
+  .section-three h1 {
+    font-size: 2.3em;
+    padding-inline: 20%;
+  }
+
+  .section-three .text {
+    font-size: 1.4em;
   }
 }

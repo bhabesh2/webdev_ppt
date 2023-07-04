@@ -168,6 +168,56 @@ body {
   font-size: 3em;
 }
 
+/* footer section for laptop */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: black;
+  border-top: 3em solid white;
+}
+
+footer .card{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1.2em;
+    color: white;
+}
+
+footer .card ul li{
+    margin-bottom: 20px;
+}
+
+footer .box4 #email_box{
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+
+footer .box4 #subscribe-btn{
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    background-color: rgb(107, 107, 228);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+footer .box1 p {
+  width: 80%;
+}
+
+footer div {
+  border: 1px solid black;
+}
+
+footer .card h1{
+    font-size: 1.7em;
+  }
+
 /* ----------------- */
 /* Mobile screen sizes for 576px */
 /*--------------------*/
@@ -290,11 +340,25 @@ body {
     font-size: 1.4em;
     color: black;
   }
+
+  /* footer for mobile */
+  footer{
+    grid-template-columns: 1fr;
+    border-top: 1em solid white;
+    gap: 8px;
+  }
+
+  footer .card{
+    gap: 0.7em;
+  }
+  footer .card h1{
+    font-size: 1.4em;
+  }
 }
 
 /* tablet view screen size for 768px */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .navbar {
     padding: 0 5em;
   }
@@ -343,9 +407,6 @@ body {
     padding-inline: 2em;
   }
 
-  /* .left-side {
-    width: 100%;
-  } */
 
   .left-side img {
     width: 100%;
@@ -364,15 +425,11 @@ body {
     flex: 1;
   }
 
-  /* .right-side {
-    width: 33em;
-  } */
-
   .right-side video {
     width: 100%;
   }
 
-  /* mobile responsive code for section three */
+  /* tablet responsive code for section three */
   .section-three {
     padding: 3em;
   }
@@ -384,5 +441,55 @@ body {
 
   .section-three .text {
     font-size: 1.4em;
+  }
+
+/* footer for tablet */
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    background-color: black;
+    border-top: 2em solid white;
+  }
+  
+  footer .card{
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      gap: 0.7em;
+      color: white;
+  }
+  
+  footer .card ul li{
+      margin-bottom: 10px;
+  }
+  
+  footer .box4 #email_box{
+      padding: 1vh 1vw;
+      border-radius: 5px;
+      border: none;
+      background-color: white;
+  }
+  
+  footer .box4 #subscribe-btn{
+      padding: 1vh 1vw;
+      border-radius: 5px;
+      background-color: rgb(107, 107, 228);
+      font-size: 1em;
+      font-weight: bold;
+      color: white;
+  }
+
+  footer .card h1{
+    font-size: 1em;
+  }
+  
+  footer .box1 p {
+    width: 100%;
+  }
+  
+  footer div {
+    border: 1px solid black;
   }
 }

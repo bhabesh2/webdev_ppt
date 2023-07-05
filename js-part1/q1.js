@@ -16,4 +16,4 @@ var b;
 a = b;
 b = 23;
 
-console.log(a + b); // 46
+console.log(a + b); // 46gi

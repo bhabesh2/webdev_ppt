@@ -92,6 +92,15 @@
     object-position: center;
 }
 
+.cart-card button {
+	padding: 1vh 1vw;  
+	border-radius: 10px;
+	background-color: black; 
+	color: white; 
+	font-weight: bold;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     .cart-container{
         display: flex;

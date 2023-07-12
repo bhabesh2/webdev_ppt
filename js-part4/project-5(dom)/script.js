@@ -39,9 +39,14 @@ async function fetchData() {
         img.src = product.image;
         img.alt = product.title;
 
+        let buyButton = document.createElement("button");
+        buyButton.textContent = "Buy Now";
+
         cartItem.appendChild(img);
         cartItem.appendChild(cartTitle);
         cartItem.appendChild(cartPrice);
+        cartItem.appendChild(buyButton)
+
         cartList.appendChild(cartItem);
       });
 
